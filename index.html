@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Le Panadero | Home</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Le <span>Panadero</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="auth-buttons">
+      <a href="login.html" class="login">Login</a>
+      <a href="signup.html" class="signup">Signup</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <span class="badge">Est. 2026</span>
+      <h1>Freshly Baked,<br>Just for You!</h1>
+      <p>
+        We bake fresh pastries daily using quality ingredients to bring you sweet,
+        comforting flavors in every bite.
+      </p>
+
+      <div class="hero-btns">
+        <a href="login.html" class="cta cta-link">Order Now</a>
+        <a href="#menu" class="cta secondary cta-link">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="featured-products" id="menu">
+    <div class="container">
+      <h2 class="section-title">Our Best Sellers</h2>
+
+      <div class="product-grid">
+        <div class="card">
+          <div class="card-img">
+            <img src="p2.jpg" alt="Pandesal">
+          </div>
+          <h3>Malunggay Pandesal</h3>
+          <p>Buttery, flaky, and golden brown with a healthy twist.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="p3.jpg" alt="Lolong Bread">
+          </div>
+          <h3>Lolong Bread</h3>
+          <p>Rich dark chocolate inside puff pastry perfection.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="p4.jpg" alt="Spanish Bread">
+          </div>
+          <h3>Spanish Bread</h3>
+          <p>Seasonal flavors with a sweet, delightful filling.</p>
+        </div>
+      </div>
+
+      <!-- Menu Feature Banner -->
+      <div class="menu-feature-banner">
+        <div class="menu-feature-img">
+          <img src="p13.jpg" alt="Bakery display">
+        </div>
+        <div class="menu-feature-content">
+          <span class="badge">Explore More</span>
+          <h3>Discover Our Full Menu</h3>
+          <p>From traditional Filipino favorites to modern artisan creations, we have something for everyone.</p>
+          <a href="login.html" class="cta">View Full Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="welcome-banner">
+
+      <div class="banner-text">
+        <span class="badge">Our Story</span>
+        <h1>The Heart of Davao's<br>Finest Bakes</h1>
+
+        <p class="about-text">
+          Started in 2026, <strong>Le Panadero</strong> was born from a passion for
+          traditional Filipino flavors blended with modern pastry techniques.
+          Every loaf we bake is a testament to our commitment to quality and
+          our love for bringing joy through exceptional baked goods.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#contact" class="cta">Learn More</a>
+        </div>
+      </div>
+
+      <div class="banner-img">
+        <img
+          src="p6.jpg"
+          alt="Bakery interior"
+        >
+      </div>
+
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-section">
+      <h2 class="section-title">Our Bakery</h2>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-large">
+          <img src="p10.jpg" alt="Bakery showcase">
+          <div class="gallery-overlay">
+            <span class="gallery-label">Our Space</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="p12.jpg" alt="Fresh bread">
+          <div class="gallery-overlay">
+            <span class="gallery-label">Fresh Daily</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="p11.jpg" alt="Pastries">
+          <div class="gallery-overlay">
+            <span class="gallery-label">Artisan Pastries</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="p9.jpg" alt="Baking process">
+          <div class="gallery-overlay">
+            <span class="gallery-label">Handcrafted</span>
+          </div>
+        </div>
+        
+        <div class="gallery-item">
+          <img src="p8.jpg" alt="Coffee and bread">
+          <div class="gallery-overlay">
+            <span class="gallery-label">Perfect Pairings</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+
+      <div class="auth-container contact-container">
+
+        <div class="auth-image contact-image">
+          <div class="auth-image-overlay">
+            <div>
+              <h3 class="contact-title">Visit Us</h3>
+              <p class="contact-info">
+                 123 Bakery Lane, Davao City<br>
+                 +63 912 345 6789<br>
+                 hello@lepanadero.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="auth-card">
+          <h2>Send us a Message</h2>
+          <form class="auth-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="How can we help you?" rows="4" required></textarea>
+            <button type="submit" class="cta">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-content">
+
+      <div class="footer-brand">
+        <div class="logo">Le <span>Panadero</span></div>
+        <p>Baking memories since 2026. Experience the finest artisanal breads and pastries in Davao.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>123 Bakery Lane, Davao City</p>
+        <p>+63 912 345 6789</p>
+        <p>hello@lepanadero.com</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Le Panadero. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

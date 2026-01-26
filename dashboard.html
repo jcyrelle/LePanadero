@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Le Panadero | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+
+<header class="navbar">
+  <div class="logo">Le <span>Panadero</span></div>
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#menu">Menu</a>
+    <a href="#orders">My Orders</a>
+    <a href="#favorites">Favorites</a>
+  </nav>
+  <div class="user-profile">
+    <span class="user-name">Welcome, <strong>Ampol</strong></span>
+    <a href="index.html" class="logout-link">Logout</a>
+  </div>
+</header>
+
+<section class="dashboard-hero">
+  <div class="dashboard-container">
+    <div class="welcome-banner">
+      <div class="banner-text">
+        <span class="badge">Exclusive Member</span>
+        <h1>Morning, Baker!</h1>
+        <p>Your favorite Sourdough is fresh out of the oven. Would you like to add it to your basket?</p>
+        <button class="cta">Quick Reorder</button>
+      </div>
+      <div class="banner-img">
+         <img src="p7.jpg" alt="Fresh Bread">
+      </div>
+    </div>
+
+    <!-- Categories section replacing products -->
+    <div class="content-section" id="menu">
+      <div class="section-header">
+        <h2 class="section-title">Our Bestsellers</h2>
+      </div>
+
+      <div class="product-grid">
+
+        <div class="card">
+          <div class="card-img"><img src="p2.jpg" alt="Artisan Breads"></div>
+          <div class="card-info">
+             <h3>Artisan Breads</h3>
+             <p>Freshly baked sourdoughs, pandesal, and classic loaves made daily.</p>
+             <button class="view-menu-btn">View Menu</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img"><img src="p3.jpg" alt="Pastries"></div>
+          <div class="card-info">
+             <h3>Pastries</h3>
+             <p>Flaky croissants, chocolate-filled treats, and buttery favorites.</p>
+             <button class="view-menu-btn">View Menu</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img"><img src="p4.jpg" alt="Cakes & Desserts"></div>
+          <div class="card-info">
+             <h3>Cakes & Desserts</h3>
+             <p>Celebration cakes and indulgent desserts made with premium ingredients.</p>
+             <button class="view-menu-btn">View Menu</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <div class="logo">Le <span>Panadero</span></div>
+      <p>Baking memories since 2026.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="signup.html">Join Us</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>123 Bakery Lane, Davao City</p>
+      <p>hello@lepanadero.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Le Panadero. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+
+<script src="script.js"></script>
+</html>
