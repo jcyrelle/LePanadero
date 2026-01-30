@@ -275,9 +275,10 @@ nav a:hover {
 .section-title {
   font-size: 48px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   color: var(--mocha-text);
   letter-spacing: -1px;
+  margin-top: 30px;
 }
 
 .product-grid {
@@ -965,4 +966,5 @@ nav a:hover {
 .view-menu-btn:hover {
   background-color: var(--primary-hover);
 }
+
 
