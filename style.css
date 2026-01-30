@@ -238,6 +238,7 @@ nav a:hover {
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
+  margin-top: 15px;
 }
 
 .cta:hover {
@@ -964,3 +965,4 @@ nav a:hover {
 .view-menu-btn:hover {
   background-color: var(--primary-hover);
 }
+
