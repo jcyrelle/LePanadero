@@ -836,11 +836,13 @@ nav a:hover {
 /* =========================================
    10. RESPONSIVE DESIGN
    ========================================= */
+
+/* ---------- Large Tablets / Small Laptops ---------- */
 @media (max-width: 1024px) {
   .navbar {
     padding: 18px 6%;
   }
-  
+
   .hero,
   .featured-products,
   .about-section,
@@ -851,103 +853,132 @@ nav a:hover {
   }
 }
 
+/* ---------- Tablets ---------- */
 @media (max-width: 900px) {
   .auth-container,
   .welcome-banner {
     flex-direction: column;
     max-width: 450px;
   }
-  
+
   .auth-image,
   .banner-img {
     height: 280px;
   }
-  
+
   .auth-card,
   .banner-text {
     padding: 40px;
   }
-  
+
   .welcome-banner {
     padding: 40px 30px;
   }
-  
+
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 200px;
   }
-  
+
   .gallery-large,
   .gallery-tall {
     grid-column: span 1;
     grid-row: span 1;
   }
-  
+
   .menu-feature-banner {
     flex-direction: column;
   }
-  
+
   .menu-feature-img {
     width: 100%;
     height: 250px;
   }
-  
+
   .menu-feature-content {
     padding: 40px 30px;
   }
 }
 
+/* ---------- Mobile / Small Tablets ---------- */
 @media (max-width: 768px) {
-  .navbar nav { 
-    display: none; 
+  /* Navbar */
+  .navbar {
+    flex-wrap: wrap;
+    text-align: center;
   }
-  
-  .hero-content h1 { 
-    font-size: 48px; 
+
+  .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
   }
-  
+
+  .auth-buttons {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  /* Hero */
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  /* Sections */
   .section-title {
     font-size: 36px;
     margin-bottom: 40px;
   }
-  
+
   .product-grid {
     gap: 30px;
   }
-  
+
   .banner-text h1 {
     font-size: 32px;
   }
-  
-  .about-section, 
+
+  .about-section,
   .contact-section {
     padding: 80px 6% 60px;
   }
-  
+
   .gallery-grid {
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  
+
   .gallery-section {
     margin-top: 50px;
   }
 }
 
+/* ---------- Small Phones ---------- */
 @media (max-width: 480px) {
   .hero-content h1 {
     font-size: 36px;
   }
-  
+
   .hero-btns {
     flex-direction: column;
   }
-  
+
   .cta {
-    text-align: center;
     width: 100%;
+    text-align: center;
   }
 }
+
+/* ---------- Extra Button ---------- */
 .view-menu-btn {
   background-color: var(--primary);
   color: #000;
@@ -967,4 +998,192 @@ nav a:hover {
   background-color: var(--primary-hover);
 }
 
+/* =========================================
+   AUTH PAGE RESPONSIVE OVERRIDES (FINAL)
+   ========================================= */
 
+/* Prevent fixed navbar overlap */
+.auth-page {
+  padding-top: 140px; /* space for navbar */
+}
+
+/* Ensure container never overflows */
+.auth-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ---------- Tablets & Small Laptops ---------- */
+@media (max-width: 900px) {
+  .auth-container {
+    flex-direction: column;
+    max-width: 480px;
+    min-height: auto;
+  }
+
+  .auth-image {
+    height: 260px;
+  }
+
+  .auth-card {
+    padding: 40px;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+  /* Navbar stays visible */
+  .navbar {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  /* Auth layout */
+  .auth-page {
+    padding: 120px 6% 60px;
+  }
+
+  .auth-card h2 {
+    font-size: 28px;
+  }
+
+  .quote {
+    font-size: 18px;
+  }
+}
+
+/* ---------- Small Phones ---------- */
+@media (max-width: 480px) {
+  .auth-container {
+    border-radius: 16px;
+  }
+
+  .auth-image {
+    height: 220px;
+  }
+
+  .auth-card {
+    padding: 30px 24px;
+  }
+
+  .auth-form input {
+    font-size: 14px;
+  }
+
+  .cta {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* =========================================
+   DASHBOARD RESPONSIVE OVERRIDES
+   ========================================= */
+
+/* Prevent fixed navbar overlap */
+.dashboard-hero {
+  padding-top: 140px;
+}
+
+/* Ensure dashboard container fits all screens */
+.dashboard-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ---------- Tablets ---------- */
+@media (max-width: 900px) {
+  .welcome-banner {
+    flex-direction: column;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .banner-img {
+    height: 280px;
+    width: 100%;
+  }
+
+  .dashboard-hero {
+    padding: 120px 6% 60px;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .user-profile {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  /* Welcome banner */
+  .banner-text h1 {
+    font-size: 32px;
+  }
+
+  .banner-text p {
+    font-size: 15px;
+  }
+
+  /* Section title */
+  .section-title {
+    font-size: 32px;
+    text-align: center;
+  }
+}
+
+/* ---------- Small Phones ---------- */
+@media (max-width: 480px) {
+  .dashboard-hero {
+    padding: 110px 5% 50px;
+  }
+
+  .welcome-banner {
+    padding: 30px 20px;
+  }
+
+  .banner-img {
+    height: 220px;
+  }
+
+  .cta,
+  .view-menu-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
